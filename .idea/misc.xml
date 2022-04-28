@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.136" />
+        <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/shape_register.xml" value="0.1365" />
+        <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/font/a.xml" value="0.303125" />
         <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/fragment_register.xml" value="0.25" />
       </map>
     </option>
   </component>
@@ -12,5 +18,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

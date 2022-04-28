@@ -1,7 +1,8 @@
-package com.omidrezabagherian.todoapplication
+package com.omidrezabagherian.todoapplication.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.omidrezabagherian.todoapplication.R
 import com.omidrezabagherian.todoapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,6 @@ class MainActivity : AppCompatActivity() {
 
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
 
-        setContentView(R.layout.activity_main)
+        setContentView(mainBinding.root)
     }
 }

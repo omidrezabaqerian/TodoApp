@@ -3,7 +3,7 @@
     <style name="Theme.TodoApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/black_100</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -12,5 +12,21 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="textViewTitleBoldCustom" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/iranyekan_bold</item>
+    </style>
+
+    <style name="textViewForgetPassword" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/iranyekan_regular</item>
+    </style>
+
+    <style name="textInputLayoutCustom" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/iranyekan_regular</item>
     </style>
 </resources>

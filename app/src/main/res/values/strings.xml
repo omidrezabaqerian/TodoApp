@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">TodoApplication</string>
+    <string name="app_name">برنامه ریز کن</string>
+
+    <string name="text_title_login_description">لوگو اپلیکیشن</string>
+    <string name="text_title_login_name">ورود</string>
+    <string name="text_title_login_username">نام کاربری</string>
+    <string name="text_title_login_password">رمز عبور</string>
+    <string name="text_title_login_login">ورود</string>
+    <string name="text_title_login_forget">نام کاربری و رمز عبور رو فراموش کردم؟</string>
+    <string name="text_title_login_register">عضو نیستید؟ ثبت نام</string>
+
+    <string name="text_title_register_name">عضویت</string>
+    <string name="text_title_register_firstname">نام</string>
+    <string name="text_title_register_lastname">نام خانوادگی</string>
+    <string name="text_title_register_username">نام کاربری</string>
+    <string name="text_title_register_password">رمز عبور</string>
+    <string name="text_title_register_retype_password">رمز عبور</string>
+    <string name="text_title_register_word_security">کلمه امنیتی</string>
+    <string name="text_title_register_register">عضویت</string>
 </resources>
