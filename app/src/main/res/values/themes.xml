@@ -19,7 +19,7 @@
         <item name="android:fontFamily">@font/iranyekan_bold</item>
     </style>
 
-    <style name="textViewForgetPassword" parent="Widget.AppCompat.TextView">
+    <style name="textViewTitleRegularCustom" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">28sp</item>
         <item name="android:fontFamily">@font/iranyekan_regular</item>
     </style>

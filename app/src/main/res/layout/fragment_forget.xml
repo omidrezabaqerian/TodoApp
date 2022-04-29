@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="rtl"
-    android:background="@color/black_100">
+    android:background="@color/black_100"
+    android:layoutDirection="rtl">
 
     <ImageView
         android:id="@+id/imageViewLoginIcon"
@@ -32,28 +32,28 @@
             style="@style/textViewTitleBoldCustom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:layout_marginTop="8dp"
-            android:text="@string/text_title_login_name"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutLoginUsername"
+            android:layout_marginBottom="16dp"
+            android:text="@string/text_title_forget_name"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutForgetFirstname"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutLoginUsername"
+            android:id="@+id/textInputLayoutForgetFirstname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="8dp"
-            android:hint="@string/text_title_login_username"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutLoginPassword"
+            android:hint="@string/text_title_forget_firstname"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutForgetLastname"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditTextLoginUsername"
+                android:id="@+id/textInputEditTextForgetFirstname"
                 style="@style/textInputLayoutCustom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,66 +63,61 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutLoginPassword"
+            android:id="@+id/textInputLayoutForgetLastname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/text_title_forget_lastname"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutForgetWordSecurity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextForgetLastname"
+                style="@style/textInputLayoutCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textAlignment="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutForgetWordSecurity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="16dp"
-            android:hint="@string/text_title_login_password"
-            app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+            android:hint="@string/text_title_forget_word_security"
+            app:layout_constraintBottom_toTopOf="@+id/buttonForget"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:passwordToggleDrawable="@drawable/ic_round_remove_red_eye_24"
-            app:passwordToggleEnabled="true">
+            app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditTextLoginPassword"
+                android:id="@+id/textInputEditTextForgetWordSecurity"
                 style="@style/textInputLayoutCustom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:inputType="textPassword"
                 android:textAlignment="center" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonRegister"
+            android:id="@+id/buttonForget"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
-            android:layout_marginBottom="16dp"
             android:fontFamily="@font/iranyekan_bold"
             android:padding="8dp"
-            android:text="@string/text_title_login_login"
+            android:text="@string/text_title_forget_forget"
             android:textSize="20sp"
+            android:layout_marginBottom="16dp"
             app:cornerRadius="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewForget"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textViewForget"
-            style="@style/textViewTitleRegularCustom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="72dp"
-            android:text="@string/text_title_login_forget"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewRegister"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textViewRegister"
-            style="@style/textViewTitleRegularCustom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="28dp"
-            android:text="@string/text_title_login_register"
-            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

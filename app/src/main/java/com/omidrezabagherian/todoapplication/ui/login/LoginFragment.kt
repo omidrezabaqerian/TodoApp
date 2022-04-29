@@ -25,5 +25,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             navController.navigate(dir)
         }
 
+        loginBinding.textViewForget.setOnClickListener {
+            val dir = LoginFragmentDirections.actionLoginFragmentToForgetFragment()
+            navController.navigate(dir)
+        }
+
     }
 }

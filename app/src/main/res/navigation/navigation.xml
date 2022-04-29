@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetFragment"
+            app:destination="@id/forgetFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -21,6 +24,15 @@
         tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetFragment"
+        android:name="com.omidrezabagherian.todoapplication.ui.forget.ForgetFragment"
+        android:label="ForgetFragment"
+        tools:layout="@layout/fragment_forget" >
+        <action
+            android:id="@+id/action_forgetFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
 </navigation>

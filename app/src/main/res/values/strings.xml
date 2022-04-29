@@ -17,4 +17,11 @@
     <string name="text_title_register_retype_password">رمز عبور</string>
     <string name="text_title_register_word_security">کلمه امنیتی</string>
     <string name="text_title_register_register">عضویت</string>
+
+    <string name="text_title_forget_name">فراموشی رمز</string>
+    <string name="text_title_forget_firstname">نام</string>
+    <string name="text_title_forget_lastname">نام خانوادگی</string>
+    <string name="text_title_forget_word_security">کلمه امنیتی</string>
+    <string name="text_title_forget_forget">فراموشی رمز</string>
+
 </resources>
