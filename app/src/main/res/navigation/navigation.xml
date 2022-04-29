@@ -30,9 +30,14 @@
         android:id="@+id/forgetFragment"
         android:name="com.omidrezabagherian.todoapplication.ui.forget.ForgetFragment"
         android:label="ForgetFragment"
-        tools:layout="@layout/fragment_forget" >
+        tools:layout="@layout/fragment_forget">
         <action
             android:id="@+id/action_forgetFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.omidrezabagherian.todoapplication.ui.todo.TodoFragment"
+        android:label="TodoFragment"
+        tools:layout="@layout/fragment_todo" />
 </navigation>
