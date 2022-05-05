@@ -1,32 +1,32 @@
-package com.omidrezabagherian.todoapplication.data
+package com.omidrezabagherian.todoapplication.data.local
 
-import com.omidrezabagherian.todoapplication.data.local.LocalDataSource
 import com.omidrezabagherian.todoapplication.data.model.Part
 import com.omidrezabagherian.todoapplication.data.model.Todo
 import com.omidrezabagherian.todoapplication.data.model.User
 import kotlinx.coroutines.flow.Flow
 
-class TodoRepository(
-    private val localDataSource: LocalDataSource
+class LocalDataSource(
+    private val userDao: UserDao,
+    private val todoDao: TodoDao,
 ) {
     suspend fun insertRegister(user: User) {
-        localDataSource.insertRegister(user)
+        userDao.insertRegister(user)
     }
 
     suspend fun updateRegister(user: User) {
-        localDataSource.updateRegister(user)
+        userDao.updateRegister(user)
     }
 
     suspend fun deleteRegister(user: User) {
-        localDataSource.deleteRegister(user)
+        userDao.deleteRegister(user)
     }
 
     fun checkUsername(username: String): Flow<User> {
-        return localDataSource.checkUsername(username)
+        return userDao.checkUsername(username)
     }
 
     fun checkLogin(username: String, password: String): Flow<User> {
-        return localDataSource.checkLogin(username, password)
+        return userDao.checkLogin(username, password)
     }
 
     fun checkForget(
@@ -34,27 +34,27 @@ class TodoRepository(
         lastname: String,
         wordSecurity: String
     ): Flow<User> {
-        return localDataSource.checkForget(firstname, lastname, wordSecurity)
+        return checkForget(firstname, lastname, wordSecurity)
     }
 
     suspend fun insertTodo(todo: Todo) {
-        localDataSource.insertTodo(todo)
+        todoDao.insertTodo(todo)
     }
 
     suspend fun updateTodo(todo: Todo) {
-        localDataSource.updateTodo(todo)
+        todoDao.updateTodo(todo)
     }
 
     suspend fun deleteAllTodo(todo: Todo) {
-        localDataSource.deleteAllTodo(todo)
+        todoDao.deleteAllTodo(todo)
     }
 
     suspend fun deleteTodo(todo: Todo) {
-        localDataSource.deleteTodo(todo)
+        todoDao.deleteTodo(todo)
     }
 
     fun checkPart(part: Part): Flow<List<Todo>> {
-        return localDataSource.checkPart(part)
+        return todoDao.checkPart(part)
     }
 
 }
