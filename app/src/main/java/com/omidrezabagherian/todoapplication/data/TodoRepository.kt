@@ -5,8 +5,9 @@ import com.omidrezabagherian.todoapplication.data.model.Part
 import com.omidrezabagherian.todoapplication.data.model.Todo
 import com.omidrezabagherian.todoapplication.data.model.User
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-class TodoRepository(
+class TodoRepository @Inject constructor(
     private val localDataSource: LocalDataSource
 ) {
     suspend fun insertRegister(user: User) {
@@ -45,8 +46,8 @@ class TodoRepository(
         localDataSource.updateTodo(todo)
     }
 
-    suspend fun deleteAllTodo(todo: Todo) {
-        localDataSource.deleteAllTodo(todo)
+    suspend fun deleteAllTodo() {
+        localDataSource.deleteAllTodo()
     }
 
     suspend fun deleteTodo(todo: Todo) {

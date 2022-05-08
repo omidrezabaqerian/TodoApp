@@ -6,7 +6,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.omidrezabagherian.todoapplication.databinding.ActivityTodoBinding
 import com.omidrezabagherian.todoapplication.ui.util.VariableConst
 import com.omidrezabagherian.todoapplication.ui.util.ViewPagerAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class TodoActivity : AppCompatActivity() {
 
     private lateinit var todoBinding: ActivityTodoBinding

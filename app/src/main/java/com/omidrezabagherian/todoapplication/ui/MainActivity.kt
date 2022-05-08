@@ -1,10 +1,11 @@
 package com.omidrezabagherian.todoapplication.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.omidrezabagherian.todoapplication.R
+import androidx.appcompat.app.AppCompatActivity
 import com.omidrezabagherian.todoapplication.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
