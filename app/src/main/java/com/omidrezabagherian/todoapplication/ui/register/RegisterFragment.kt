@@ -1,9 +1,9 @@
 package com.omidrezabagherian.todoapplication.ui.register
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -12,10 +12,10 @@ import com.google.android.material.snackbar.Snackbar
 import com.omidrezabagherian.todoapplication.R
 import com.omidrezabagherian.todoapplication.data.model.User
 import com.omidrezabagherian.todoapplication.databinding.FragmentRegisterBinding
+import com.omidrezabagherian.todoapplication.ui.TodoActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import kotlin.concurrent.thread
 
 @AndroidEntryPoint
 class RegisterFragment : Fragment(R.layout.fragment_register) {
@@ -50,8 +50,6 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                     .show()
             }
 
-            /*val dir = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
-            navController.navigate(dir)*/
         }
 
     }
@@ -60,17 +58,20 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         registerViewModel.checkUsername(user.username)
 
         lifecycleScope.launch {
-            registerViewModel.checkUsername.collect {
+            registerViewModel.checkUsernameRegister.collect {
                 if (it == null) {
                     Snackbar.make(
                         requireContext(),
                         view,
                         "حساب کاربری ساخته شد",
                         Snackbar.LENGTH_SHORT
-                    )
-                        .show()
+                    ).show()
 
                     registerViewModel.insertRegister(user)
+
+                    val todoActivity = Intent(requireActivity(), TodoActivity::class.java)
+                    startActivity(todoActivity)
+                    requireActivity().finish()
 
                     Log.i("user", it.toString())
 
@@ -80,8 +81,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                         view,
                         "نام کاربری موجود هست",
                         Snackbar.LENGTH_SHORT
-                    )
-                        .show()
+                    ).show()
 
                     Log.i("user", it.toString())
                 }

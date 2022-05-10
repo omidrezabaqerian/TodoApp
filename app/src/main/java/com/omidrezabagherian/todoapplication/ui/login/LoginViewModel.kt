@@ -1,4 +1,4 @@
-package com.omidrezabagherian.todoapplication.ui.register
+package com.omidrezabagherian.todoapplication.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -12,25 +12,19 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class RegisterViewModel @Inject constructor(
+class LoginViewModel
+@Inject constructor(
     private val todoRepository: TodoRepository
 ) : ViewModel() {
 
-    private val _checkUsernameRegister = MutableStateFlow<User?>(null)
-    val checkUsernameRegister : StateFlow<User?> = _checkUsernameRegister
+    private val _checkUsernameLogin = MutableStateFlow<User?>(null)
+    val checkUsernameLogin: StateFlow<User?> = _checkUsernameLogin
 
-    fun insertRegister(user: User) {
+    fun checkLogin(username: String, password: String) {
         viewModelScope.launch {
-            todoRepository.insertRegister(user)
-        }
-    }
-
-    fun checkUsername(username: String) {
-        viewModelScope.launch {
-            todoRepository.checkUsername(username).collect {
-                _checkUsernameRegister.emit(it)
+            todoRepository.checkLogin(username, password).collect {
+                _checkUsernameLogin.emit(it)
             }
         }
     }
-
 }
