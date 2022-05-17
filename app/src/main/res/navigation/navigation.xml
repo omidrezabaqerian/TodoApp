@@ -40,4 +40,9 @@
         android:name="com.omidrezabagherian.todoapplication.ui.todo.TodoFragment"
         android:label="TodoFragment"
         tools:layout="@layout/fragment_todo" />
+    <fragment
+        android:id="@+id/insertFragment"
+        android:name="com.omidrezabagherian.todoapplication.ui.insert.InsertFragment"
+        android:label="InsertFragment"
+        tools:layout="@layout/fragment_insert" />
 </navigation>

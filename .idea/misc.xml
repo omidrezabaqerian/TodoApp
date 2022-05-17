@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/drawable/spinner_background.xml" value="0.1" />
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/layout/fragment_host.xml" value="0.1" />
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/layout/fragment_insert.xml" value="0.16" />
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/layout/fragment_login.xml" value="0.17" />
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/layout/fragment_register.xml" value="0.15" />
+        <entry key="..\:/Users/OmidCoder21/Desktop/TodoApplication/app/src/main/res/layout/fragment_todo.xml" value="0.1" />
         <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.136" />
         <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_round_add_24.xml" value="0.119" />
         <entry key="..\:/Users/OmidrezaBagherian/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/shape_register.xml" value="0.1365" />

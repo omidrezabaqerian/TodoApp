@@ -12,7 +12,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.omidrezabagherian.todoapplication.R
 import com.omidrezabagherian.todoapplication.data.model.User
 import com.omidrezabagherian.todoapplication.databinding.FragmentRegisterBinding
-import com.omidrezabagherian.todoapplication.ui.TodoActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

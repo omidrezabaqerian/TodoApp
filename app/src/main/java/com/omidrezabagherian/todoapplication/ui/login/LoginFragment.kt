@@ -10,9 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.omidrezabagherian.todoapplication.R
 import com.omidrezabagherian.todoapplication.databinding.FragmentLoginBinding
-import com.omidrezabagherian.todoapplication.databinding.FragmentRegisterBinding
-import com.omidrezabagherian.todoapplication.ui.TodoActivity
-import com.omidrezabagherian.todoapplication.ui.register.RegisterFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

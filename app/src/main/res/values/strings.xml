@@ -14,7 +14,7 @@
     <string name="text_title_register_lastname">نام خانوادگی</string>
     <string name="text_title_register_username">نام کاربری</string>
     <string name="text_title_register_password">رمز عبور</string>
-    <string name="text_title_register_retype_password">رمز عبور</string>
+    <string name="text_title_register_retype_password">تکرار رمز عبور</string>
     <string name="text_title_register_word_security">کلمه امنیتی</string>
     <string name="text_title_register_register">عضویت</string>
 
@@ -23,5 +23,17 @@
     <string name="text_title_forget_lastname">نام خانوادگی</string>
     <string name="text_title_forget_word_security">کلمه امنیتی</string>
     <string name="text_title_forget_forget">فراموشی رمز</string>
+
+    <string-array name="state">
+        <item>پایین</item>
+        <item>متوسط</item>
+        <item>بالا</item>
+    </string-array>
+
+    <string-array name="part">
+        <item>کار های من</item>
+        <item>در حال انجام</item>
+        <item>کار های تکمیل شده</item>
+    </string-array>
 
 </resources>
