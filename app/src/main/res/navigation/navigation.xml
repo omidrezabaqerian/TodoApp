@@ -36,8 +36,8 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/todoFragment"
-        android:name="com.omidrezabagherian.todoapplication.ui.todo.TodoFragment"
-        android:label="TodoFragment"
-        tools:layout="@layout/fragment_todo" />
+        android:id="@+id/hostFragment"
+        android:name="com.omidrezabagherian.todoapplication.ui.HostFragment"
+        android:label="fragment_host"
+        tools:layout="@layout/fragment_host" />
 </navigation>

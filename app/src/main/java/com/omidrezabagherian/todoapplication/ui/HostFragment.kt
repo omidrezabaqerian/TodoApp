@@ -1,32 +1,32 @@
 package com.omidrezabagherian.todoapplication.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
-import com.omidrezabagherian.todoapplication.databinding.ActivityTodoBinding
+import com.omidrezabagherian.todoapplication.R
+import com.omidrezabagherian.todoapplication.databinding.FragmentHostBinding
 import com.omidrezabagherian.todoapplication.ui.util.VariableConst
 import com.omidrezabagherian.todoapplication.ui.util.ViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class TodoActivity : AppCompatActivity() {
+class HostFragment : Fragment(R.layout.fragment_host) {
 
-    private lateinit var todoBinding: ActivityTodoBinding
+    private lateinit var hostBinding: FragmentHostBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        todoBinding = ActivityTodoBinding.inflate(layoutInflater)
+        hostBinding = FragmentHostBinding.inflate(layoutInflater)
 
         val adapter = ViewPagerAdapter(
-            supportFragmentManager, lifecycle
+            childFragmentManager, lifecycle
         )
-        todoBinding.viewPagerTodo.adapter = adapter
+        hostBinding.viewPagerTodo.adapter = adapter
 
-        TabLayoutMediator(todoBinding.tabLayoutTodo, todoBinding.viewPagerTodo) { tab, position ->
+        TabLayoutMediator(hostBinding.tabLayoutTodo, hostBinding.viewPagerTodo) { tab, position ->
             tab.text = VariableConst.TABS[position]
         }.attach()
 
-        setContentView(todoBinding.root)
     }
 }

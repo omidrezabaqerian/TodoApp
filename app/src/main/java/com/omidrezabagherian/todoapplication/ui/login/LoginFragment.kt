@@ -10,9 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.omidrezabagherian.todoapplication.R
 import com.omidrezabagherian.todoapplication.databinding.FragmentLoginBinding
-import com.omidrezabagherian.todoapplication.databinding.FragmentRegisterBinding
-import com.omidrezabagherian.todoapplication.ui.TodoActivity
-import com.omidrezabagherian.todoapplication.ui.register.RegisterFragmentDirections
+import com.omidrezabagherian.todoapplication.ui.HostFragment
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -63,9 +61,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                         Snackbar.LENGTH_SHORT
                     ).show()
 
-                    val todoActivity = Intent(requireActivity(), TodoActivity::class.java)
-                    startActivity(todoActivity)
-                    requireActivity().finish()
+                    navController.navigate(R.id.hostFragment)
 
                 } else {
                     Snackbar.make(

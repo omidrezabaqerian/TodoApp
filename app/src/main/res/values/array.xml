@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="state">
+        <item>پایین</item>
+        <item>متوسط</item>
+        <item>بالا</item>
+    </string-array>
+
+    <string-array name="part">
+        <item>کار های من</item>
+        <item>در حال انجام</item>
+        <item>کار های تکمیل شده</item>
+    </string-array>
+</resources>

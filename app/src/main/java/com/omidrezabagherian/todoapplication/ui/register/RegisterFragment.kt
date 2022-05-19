@@ -12,7 +12,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.omidrezabagherian.todoapplication.R
 import com.omidrezabagherian.todoapplication.data.model.User
 import com.omidrezabagherian.todoapplication.databinding.FragmentRegisterBinding
-import com.omidrezabagherian.todoapplication.ui.TodoActivity
+import com.omidrezabagherian.todoapplication.ui.HostFragment
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -69,9 +69,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
                     registerViewModel.insertRegister(user)
 
-                    val todoActivity = Intent(requireActivity(), TodoActivity::class.java)
-                    startActivity(todoActivity)
-                    requireActivity().finish()
+                    navController.navigate(R.id.hostFragment)
 
                     Log.i("user", it.toString())
 

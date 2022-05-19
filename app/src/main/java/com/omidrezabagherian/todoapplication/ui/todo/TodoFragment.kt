@@ -16,7 +16,7 @@ class TodoFragment : Fragment(R.layout.fragment_todo) {
 
         todoBinding = FragmentTodoBinding.bind(view)
 
-
+        todo
 
     }
 }

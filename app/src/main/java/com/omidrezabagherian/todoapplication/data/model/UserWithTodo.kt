@@ -7,7 +7,7 @@ data class UserWithTodo(
     @Embedded val user: User,
     @Relation(
         parentColumn = "username",
-        entityColumn = "usernameOwnerId"
+        entityColumn = "userCreated"
     )
     val todo: MutableList<Todo>
 )
